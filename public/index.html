@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design | Portfólio</title>
+  <meta name="description" content="Portfólio de desenvolvimento de sites e aplicativos.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body id="topo" data-title="ld.page">
+  <header class="panel" id="inicio">
+    <div class="clip" aria-hidden="true"><div class="semi"></div></div>
+    <nav class="nav" aria-label="Principal">
+      <a class="logo" href="#topo" aria-label="Portfolio"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 2a11 11 0 1 0 11 11H13z" fill="#E63843"/></svg></a>
+      <a class="link" href="#oficio" data-i18n="ld.about">Sobre</a>
+      <a class="link" href="#galeria" data-i18n="ld.gallery">Galeria</a>
+      <a class="link" href="#portfolio" data-i18n="ld.portfolio">Portfólio</a>
+      <a class="link" href="#contato" data-i18n="ld.contact">Contato</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="pt" lang="pt" aria-label="Português">PT</button>
+      <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+      <button type="button" data-lang="it" lang="it" aria-label="Italiano">IT</button>
+      <button type="button" data-lang="el" lang="el" aria-label="Ελληνικά">ΕΛ</button>
+    </div>
+    <div class="copy">
+      <p class="eyebrow" data-i18n="ld.eyebrow">Desenvolvedor Fullstack</p>
+      <h1 class="title" data-i18n="ld.title">Design</h1>
+      <p class="desc" data-i18n="ld.text">Nosso hobby é um design moderno e conveniente, a chave para uma comunicação de sucesso com o cliente.</p>
+      <a class="cta" href="#portfolio">
+        <span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span>
+        <span data-i18n="ld.cta">Ver mais</span>
+      </a>
+    </div>
+    <div class="slides" aria-hidden="true"><span class="on">01</span><div class="bar"><i></i></div><span>03</span></div>
+    <div class="art">
+      <div class="art-in">
+        <div class="disc"></div>
+        <img src="/assets/img/sculpture-red.webp" width="704" height="1534" data-i18n-alt="ld.alt" alt="Escultura clássica em tom carmesim sobre um círculo vermelho" fetchpriority="high">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="oficio" class="sec about">
+      <div>
+        <h2 data-i18n="craft.title">O ofício</h2>
+        <p class="lead" data-i18n="craft.lead">Cada projeto começa pela estrutura: forma clara, proporção certa e nada que não precise estar ali.</p>
+        <dl>
+          <div><dt data-i18n="craft.web.t">Sites e aplicações web</dt><dd data-i18n="craft.web.d">Interfaces rápidas, responsivas e acessíveis, do layout ao código.</dd></div>
+          <div><dt data-i18n="craft.app.t">Aplicativos</dt><dd data-i18n="craft.app.d">Apps para celular e web, integrados a APIs e bancos de dados.</dd></div>
+          <div><dt data-i18n="craft.cloud.t">Back end e nuvem</dt><dd data-i18n="craft.cloud.d">APIs, bancos de dados e implantação em nuvem prontos para crescer.</dd></div>
+          <div><dt data-i18n="craft.sec.t">Segurança</dt><dd data-i18n="craft.sec.d">Autenticação, validação de dados e proteção contra ataques comuns desde o início.</dd></div>
+        </dl>
+      </div>
+      <div class="portrait-wrap">
+        <img class="portrait" src="/assets/img/david.webp" width="640" height="1138" loading="lazy" decoding="async" data-i18n-alt="david.alt" alt="Detalhe do rosto e dos cachos de uma escultura clássica">
+      </div>
+    </section>
+
+    <section id="galeria" class="sec">
+      <h2 data-i18n="gallery.title">Galeria</h2>
+      <p class="lead" data-i18n="gallery.text">Esculturas clássicas que inspiram o meu trabalho: forma, proporção e luz.</p>
+      <div class="gallery">
+        <figure><img src="/assets/img/g1.webp" width="720" height="1280" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g2.webp" width="720" height="1280" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g3.webp" width="346" height="578" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g4.webp" width="720" height="1280" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g5.webp" width="415" height="738" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g6.webp" width="458" height="670" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g7.webp" width="720" height="959" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g8.webp" width="540" height="1080" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g9.webp" width="415" height="738" alt="" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+
+    <section id="portfolio" class="sec">
+      <h2 data-i18n="pf.title">Portfólio</h2>
+      <p class="lead" data-i18n="pf.lead">Prévias dos sites que desenvolvi. Clique em um para abrir.</p>
+      <div class="car" id="carousel" role="region" aria-roledescription="carousel" data-i18n-label="pf.label" aria-label="Prévias dos sites">
+        <div class="car-track" id="car-track"></div>
+        <p class="car-empty" id="car-empty" hidden data-i18n="pf.empty">Em breve.</p>
+        <div class="car-bar" id="car-bar">
+          <div class="cap"><h3 id="car-title"></h3><p id="car-desc"></p><a id="car-open" class="open" target="_blank" rel="noopener noreferrer" hidden data-i18n="pf.open">Abrir site</a></div>
+          <div class="car-ctl">
+            <div class="prog" aria-hidden="true"><b id="car-i">01</b><div class="bar"><i id="car-fill"></i></div><span id="car-n">04</span></div>
+            <button type="button" class="ring-btn" id="car-prev" data-i18n-label="pf.prev" aria-label="Anterior"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M14 8H3M7 4L3 8l4 4"/></svg></button>
+            <button type="button" class="ring-btn" id="car-toggle" data-i18n-label="pf.pause" aria-label="Pausar"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path id="car-icon" d="M4 3h3v10H4zM9 3h3v10H9z"/></svg></button>
+            <button type="button" class="ring-btn" id="car-next" data-i18n-label="pf.next" aria-label="Próximo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="sec narrow">
+      <h2 data-i18n="contact.title">Contato</h2>
+      <form id="form-contato" novalidate>
+        <label><span data-i18n="contact.name">Nome</span> <input name="name" maxlength="100" required autocomplete="name"></label>
+        <label><span data-i18n="contact.email">E-mail</span> <input name="email" type="email" maxlength="254" required autocomplete="email"></label>
+        <label><span data-i18n="contact.msg">Mensagem</span> <textarea name="body" rows="4" maxlength="2000" required></textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="cta" type="submit"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span><span data-i18n="contact.send">Enviar mensagem</span></button>
+        <p id="status" role="status" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <a class="totop" id="totop" href="#topo" data-i18n-label="pf.top" aria-label="Voltar ao topo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M8 14V3M4 7l4-4 4 4"/></svg></a>
+
+  <script src="/js/i18n.js" defer></script>
+  <script src="/js/site.js" defer></script>
+  <script src="/js/carousel.js" defer></script>
+  <script src="/js/contact.js" defer></script>
+</body>
+</html>

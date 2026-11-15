@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Site de exemplo 01",
+    "description": "Substitua este item pelo seu site em public/data/previews.json.",
+    "url": "",
+    "type": "image",
+    "media": "/assets/previews/exemplo-1.webp",
+    "alt": "Prévia ilustrativa do site de exemplo 1"
+  },
+  {
+    "title": "Site de exemplo 02",
+    "description": "Substitua este item pelo seu site em public/data/previews.json.",
+    "url": "",
+    "type": "image",
+    "media": "/assets/previews/exemplo-2.webp",
+    "alt": "Prévia ilustrativa do site de exemplo 2"
+  },
+  {
+    "title": "Site de exemplo 03",
+    "description": "Substitua este item pelo seu site em public/data/previews.json.",
+    "url": "",
+    "type": "image",
+    "media": "/assets/previews/exemplo-3.webp",
+    "alt": "Prévia ilustrativa do site de exemplo 3"
+  },
+  {
+    "title": "Site de exemplo 04",
+    "description": "Substitua este item pelo seu site em public/data/previews.json.",
+    "url": "",
+    "type": "image",
+    "media": "/assets/previews/exemplo-4.webp",
+    "alt": "Prévia ilustrativa do site de exemplo 4"
+  }
+]

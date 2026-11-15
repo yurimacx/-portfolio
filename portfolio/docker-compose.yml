@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: portfolio
+      POSTGRES_PASSWORD: troque_esta_senha
+      POSTGRES_DB: portfolio
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    ports: ["127.0.0.1:5432:5432"]
+  app:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://portfolio:troque_esta_senha@db:5432/portfolio
+    ports: ["3000:3000"]
+    depends_on: [db]
+volumes:
+  pgdata:

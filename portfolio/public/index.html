@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio | Sites e aplicativos</title>
+  <meta name="description" content="Portfólio de desenvolvimento de sites e aplicativos.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#inicio">Yuri Macário</a>
+    <nav aria-label="Principal">
+      <a href="#inicio" data-i18n="nav.home">Início</a>
+      <a href="#oficio" data-i18n="nav.craft">Ofício</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galeria</a>
+      <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+      <a href="#contato" data-i18n="nav.contact">Contato</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="pt" lang="pt" aria-label="Português">PT</button>
+      <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+      <button type="button" data-lang="it" lang="it" aria-label="Italiano">IT</button>
+      <button type="button" data-lang="el" lang="el" aria-label="Ελληνικά">ΕΛ</button>
+    </div>
+  </header>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="stage">
+        <div class="ring" aria-hidden="true"></div>
+        <img src="/assets/img/hero.webp" width="1100" height="1467" data-i18n-alt="hero.alt" alt="Escultura clássica de mármore iluminada contra fundo escuro" fetchpriority="high">
+      </div>
+      <div class="copy">
+        <h1 data-i18n="hero.title">Sites e aplicativos
+construídos para durar</h1>
+        <p data-i18n="hero.text">Front end, back end, banco de dados e nuvem, com segurança desde o primeiro commit.</p>
+        <a class="btn" href="#projetos" data-i18n="hero.cta">Ver projetos</a>
+      </div>
+    </section>
+    <section id="oficio" class="block craft">
+      <div>
+        <h2 data-i18n="craft.title">O ofício</h2>
+        <p class="lead" data-i18n="craft.lead">Cada projeto começa pela estrutura: forma clara, proporção certa e nada que não precise estar ali.</p>
+        <dl>
+          <div><dt data-i18n="craft.web.t">Sites e aplicações web</dt><dd data-i18n="craft.web.d">Interfaces rápidas, responsivas e acessíveis, do layout ao código.</dd></div>
+          <div><dt data-i18n="craft.app.t">Aplicativos</dt><dd data-i18n="craft.app.d">Apps para celular e web, integrados a APIs e bancos de dados.</dd></div>
+          <div><dt data-i18n="craft.cloud.t">Back end e nuvem</dt><dd data-i18n="craft.cloud.d">APIs, bancos de dados e implantação em nuvem prontos para crescer.</dd></div>
+          <div><dt data-i18n="craft.sec.t">Segurança</dt><dd data-i18n="craft.sec.d">Autenticação, validação de dados e proteção contra ataques comuns desde o início.</dd></div>
+        </dl>
+      </div>
+      <img class="portrait" src="/assets/img/david.webp" width="640" height="1138" loading="lazy" decoding="async" data-i18n-alt="david.alt" alt="Detalhe do rosto e dos cachos de uma escultura clássica">
+    </section>
+    <section id="galeria" class="block">
+      <h2 data-i18n="gallery.title">Galeria</h2>
+      <p class="lead" data-i18n="gallery.text">Esculturas clássicas que inspiram o meu trabalho: forma, proporção e luz.</p>
+      <div class="gallery">
+        <figure><img src="/assets/img/g1.webp" width="720" height="1280" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g2.webp" width="720" height="1280" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g3.webp" width="346" height="578" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g4.webp" width="720" height="1280" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g5.webp" width="415" height="738" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g6.webp" width="458" height="670" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g7.webp" width="720" height="959" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g8.webp" width="540" height="1080" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="/assets/img/g9.webp" width="415" height="738" alt="" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
+    <section id="projetos" class="block">
+      <h2 data-i18n="projects.title">Projetos</h2>
+      <div id="lista" class="grid" aria-live="polite"><p class="muted" data-i18n="projects.loading">Carregando projetos…</p></div>
+    </section>
+    <section id="contato" class="block narrow">
+      <h2 data-i18n="contact.title">Contato</h2>
+      <form id="form-contato" novalidate>
+        <label><span data-i18n="contact.name">Nome</span> <input name="name" maxlength="100" required autocomplete="name"></label>
+        <label><span data-i18n="contact.email">E-mail</span> <input name="email" type="email" maxlength="254" required autocomplete="email"></label>
+        <label><span data-i18n="contact.msg">Mensagem</span> <textarea name="body" rows="5" maxlength="2000" required></textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit" data-i18n="contact.send">Enviar mensagem</button>
+        <p id="status" role="status" class="muted"></p>
+      </form>
+    </section>
+  </main>
+  <script src="/js/i18n.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

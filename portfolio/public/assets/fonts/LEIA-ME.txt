@@ -1,0 +1,4 @@
+Coloque aqui os arquivos de fonte (a CSP do site só carrega fontes do próprio domínio):
+  BodoniModa.woff2         (Bodoni Moda, variável, pesos 400-900)
+  CormorantGaramond.woff2  (Cormorant Garamond, variável, pesos 300-700)
+Ambas são livres (SIL OFL) e estão no Google Fonts. Didot é comercial: o site usa a Didot do sistema (macOS/iOS) quando existir.

@@ -1,0 +1,4 @@
+Fonte do site: Montserrat (geométrica, conforme o template). Coloque aqui o arquivo:
+  Montserrat.woff2   (variável, pesos 100-900)
+Ela é livre (SIL OFL) e está no Google Fonts. A CSP do site só carrega fontes do próprio domínio.
+Sem o arquivo, o site usa Inter, Helvetica Neue, Helvetica ou Arial como reserva.
